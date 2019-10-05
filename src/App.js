@@ -18,16 +18,18 @@ function App() {
   ]
   return (
     <Router>
-      <Switch>
-        {appRoutes.map(route => (
-          <Route
-            key={route.path}
-            exact={route.exact}
-            path={route.path}
-            component={route.component}
-          />
-        ))}
-      </Switch>
+      <div className="section">
+        <Switch>
+          {appRoutes.map(route => (
+            <Route
+              key={route.path}
+              exact={route.exact}
+              path={route.path}
+              component={route.component}
+            />
+          ))}
+        </Switch>
+      </div>
     </Router>
   )
 }

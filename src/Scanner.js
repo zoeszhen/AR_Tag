@@ -17,7 +17,7 @@ const Scanner = () => {
       <h1>Static QR code scaning</h1>
       <img src={sample} alt="log" id="sample_code" />
       <button onClick={() => getQrCodeResult(sample)}>Start Scan</button>
-      <div>result: {results}</div>
+      <h2>result: {results}</h2>
     </div>
   )
 }
