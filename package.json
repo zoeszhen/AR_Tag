@@ -4,10 +4,15 @@
   "private": true,
   "dependencies": {
     "@zxing/library": "^0.15.2",
+    "aframe": "^0.9.2",
+    "ar.js": "^1.7.8",
+    "konva": "^4.0.15",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-konva": "^16.10.1-0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "use-image": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

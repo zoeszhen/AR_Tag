@@ -18,17 +18,19 @@ code {
 /* img and video */
 
 img {
-  width: 10em;
+  /* width: 300px; */
   display: inline-block;
-  margin: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 video {
-  width: '300';
-  height: '200';
   border: 1px solid gray;
   display: inline-block;
-  margin: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 button {
@@ -39,4 +41,23 @@ button {
   background: #69aa67;
   text-align: center;
   margin: 1em;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.page {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+canvas {
+  z-index: 1000;
 }
