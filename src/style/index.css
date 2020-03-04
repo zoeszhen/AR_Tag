@@ -41,6 +41,9 @@ button {
   background: #69aa67;
   text-align: center;
   margin: 1em;
+  position: relative;
+  bottom: 0;
+  z-index: 1001;
 }
 
 .dot {
@@ -49,6 +52,7 @@ button {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  z-index: 1002;
 }
 .page {
   width: 300px;
