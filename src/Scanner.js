@@ -1,22 +1,22 @@
-import React, { useState } from 'react'
-import { BrowserQRCodeReader } from '@zxing/library'
-import sample from './assets/sample_code.png'
-import { Stage, Layer, Text } from 'react-konva'
-import DotCmp from './DotCmp'
+import React, { useState } from 'react';
+import { BrowserQRCodeReader } from '@zxing/library';
+import sample from './assets/sample_code.png';
+import { Stage, Layer, Text } from 'react-konva';
+import DotCmp from './DotCmp';
 
 const Scanner = () => {
-  const [results, setResults] = useState('')
+  const [results, setResults] = useState('');
 
-  const getQrCodeResult = url => {
-    const codeReader = new BrowserQRCodeReader()
+  const getQrCodeResult = (url) => {
+    const codeReader = new BrowserQRCodeReader();
     codeReader
       .decodeFromImage('sample_code', url)
-      .then(result => {
-        console.log('result', JSON.stringify(result.resultPoints))
-        setResults(result)
+      .then((result) => {
+        console.log('result', JSON.stringify(result.resultPoints));
+        setResults(result);
       })
-      .catch(err => console.error(err))
-  }
+      .catch((err) => console.error(err));
+  };
   return (
     <div className="page">
       {/* <h2>result: {results}</h2> */}
@@ -37,7 +37,8 @@ const Scanner = () => {
       <img src={sample} alt="log" id="sample_code" />
       <button onClick={() => getQrCodeResult(sample)}>Start Scan</button>
     </div>
-  )
-}
+  );
+};
+// test
 
-export default Scanner
+export default Scanner;
